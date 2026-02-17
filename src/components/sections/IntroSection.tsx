@@ -6,23 +6,23 @@ import RevealOnScroll from "../ui/RevealOnScroll";
 import GlowCard from "../ui/GlowCard";
 import GradientText from "../ui/GradientText";
 
-const credentials = [
+const pillars = [
   {
-    title: "IA Aplicada",
+    title: "Gestión eficiente",
     description:
-      "Desarrollo de agentes inteligentes y automatizaciones con modelos de lenguaje de última generación.",
-    color: "#6366f1",
+      "Ordenar el flujo de trabajo de la oficina senatorial con herramientas que permitan al equipo operar con claridad, agilidad y trazabilidad.",
+    color: "#3b82f6",
   },
   {
-    title: "Entornos Digitales",
+    title: "Conexión territorial",
     description:
-      "Plataformas web, dashboards y experiencias interactivas construidas con tecnología de punta.",
-    color: "#06b6d4",
+      "Escuchar al Maule y que el Maule lo escuche. Canales directos para entender las necesidades reales de la región y comunicar la respuesta.",
+    color: "#14b8a6",
   },
   {
-    title: "Conocimiento Político",
+    title: "Visibilidad legislativa",
     description:
-      "Comprensión profunda del ecosistema político chileno, comunicación estratégica y gestión territorial.",
+      "Que el trabajo en el Senado sea conocido. Traducir la actividad legislativa en mensajes claros que lleguen a quienes representa.",
     color: "#10b981",
   },
 ];
@@ -33,18 +33,18 @@ export default function IntroSection() {
       <div className="mx-auto max-w-5xl">
         <RevealOnScroll variants={fadeUp}>
           <p className="mb-4 text-sm font-medium tracking-widest uppercase text-accent">
-            Una nueva forma de presentar
+            El desafío
           </p>
           <h2 className="mb-6 text-3xl font-bold leading-tight md:text-5xl">
-            Esto no es un PDF.{" "}
-            <GradientText from="#6366f1" to="#06b6d4">
-              Es una demostración.
+            Un senado moderno requiere{" "}
+            <GradientText from="#3b82f6" to="#14b8a6">
+              herramientas a la altura.
             </GradientText>
           </h2>
-          <p className="mb-16 max-w-2xl text-lg text-muted">
-            Esta propuesta es, en sí misma, una muestra de lo que podemos construir
-            juntos. Cada animación, cada interacción, cada detalle está pensado
-            para comunicar con impacto en la era digital.
+          <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted">
+            La labor legislativa es compleja y muchas veces invisible para la ciudadanía.
+            Esta propuesta reúne las herramientas necesarias para que la gestión sea
+            ordenada, su voz llegue al territorio y el trabajo hable por sí mismo.
           </p>
         </RevealOnScroll>
 
@@ -55,16 +55,16 @@ export default function IntroSection() {
           variants={staggerContainer}
           className="grid gap-6 md:grid-cols-3"
         >
-          {credentials.map((cred) => (
-            <motion.div key={cred.title} variants={staggerItem}>
-              <GlowCard color={cred.color} className="h-full">
+          {pillars.map((pillar) => (
+            <motion.div key={pillar.title} variants={staggerItem}>
+              <GlowCard color={pillar.color} className="h-full">
                 <div
                   className="mb-4 h-1 w-12 rounded-full"
-                  style={{ backgroundColor: cred.color }}
+                  style={{ backgroundColor: pillar.color }}
                 />
-                <h3 className="mb-2 text-lg font-semibold">{cred.title}</h3>
-                <p className="text-sm leading-relaxed text-muted">
-                  {cred.description}
+                <h3 className="mb-3 text-xl font-semibold">{pillar.title}</h3>
+                <p className="text-base leading-relaxed text-muted">
+                  {pillar.description}
                 </p>
               </GlowCard>
             </motion.div>

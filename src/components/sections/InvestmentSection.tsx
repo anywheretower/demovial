@@ -24,11 +24,11 @@ export default function InvestmentSection() {
       <div className="mx-auto max-w-3xl">
         <RevealOnScroll variants={fadeUp}>
           <p className="mb-4 text-center text-sm font-medium tracking-widest uppercase text-accent-amber">
-            Resumen de inversión
+            Inversión mensual
           </p>
           <h2 className="mb-16 text-center text-3xl font-bold md:text-5xl">
             <GradientText from="#f59e0b" to="#f97316">
-              Tu inversión mensual
+              Resumen de la propuesta
             </GradientText>
           </h2>
         </RevealOnScroll>
@@ -55,8 +55,8 @@ export default function InvestmentSection() {
                   style={{ backgroundColor: service.color }}
                 />
                 <div>
-                  <p className="font-medium">{service.title}</p>
-                  <p className="text-xs text-muted">{service.subtitle}</p>
+                  <p className="text-base font-medium">{service.title}</p>
+                  <p className="text-sm text-muted">{service.subtitle}</p>
                 </div>
               </div>
               <AnimatedCounter

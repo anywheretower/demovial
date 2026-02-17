@@ -7,8 +7,8 @@ interface GradientTextProps {
 
 export default function GradientText({
   children,
-  from = "#6366f1",
-  to = "#a855f7",
+  from = "#3b82f6",
+  to = "#60a5fa",
   className = "",
 }: GradientTextProps) {
   return (

@@ -24,7 +24,7 @@ export default function HeroSection() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent)",
+            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.12), transparent)",
         }}
       />
 
@@ -46,9 +46,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-6 text-sm font-medium tracking-widest uppercase text-muted"
+          className="mb-6 text-base font-medium tracking-widest uppercase text-muted"
         >
-          Propuesta de Servicios Digitales
+          Infraestructura digital para el Senado
         </motion.p>
 
         <motion.h1
@@ -57,8 +57,8 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="mb-6 text-5xl font-bold leading-tight tracking-tight md:text-7xl lg:text-8xl"
         >
-          <GradientText from="#6366f1" to="#a855f7">
-            Cristian Vial
+          <GradientText from="#3b82f6" to="#60a5fa">
+            Senador Vial
           </GradientText>
         </motion.h1>
 
@@ -66,9 +66,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-4 text-xl text-muted md:text-2xl"
+          className="mx-auto mb-4 max-w-2xl text-xl text-muted md:text-2xl"
         >
-          Senador electo por el Maule
+          Herramientas para potenciar su gestión, fortalecer la conexión con el Maule y hacer visible una labor legislativa responsable y trascendente.
         </motion.p>
 
         <motion.div
@@ -81,7 +81,7 @@ export default function HeroSection() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
           </span>
-          Experiencia interactiva
+          Propuesta interactiva
         </motion.div>
       </motion.div>
 

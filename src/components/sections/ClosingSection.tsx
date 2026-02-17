@@ -13,21 +13,21 @@ export default function ClosingSection() {
         className="pointer-events-none absolute inset-0 opacity-[0.08]"
         style={{
           background:
-            "radial-gradient(ellipse 60% 40% at 50% 60%, #6366f1, transparent)",
+            "radial-gradient(ellipse 60% 40% at 50% 60%, #3b82f6, transparent)",
         }}
       />
 
       <div className="mx-auto max-w-3xl text-center">
         <RevealOnScroll variants={fadeUp}>
           <h2 className="mb-6 text-3xl font-bold md:text-5xl lg:text-6xl">
-            <GradientText from="#6366f1" to="#a855f7">
-              Construyamos juntos
+            <GradientText from="#3b82f6" to="#60a5fa">
+              El Maule merece un senador visible
             </GradientText>
           </h2>
           <p className="mb-12 text-lg leading-relaxed text-muted md:text-xl">
-            Esta propuesta es solo el comienzo. Cada herramienta, cada estrategia
-            está diseñada para potenciar tu conexión con el Maule y posicionarte
-            como un referente en comunicación política digital.
+            Cada herramienta de esta propuesta tiene un solo propósito: que la gestión
+            legislativa tenga el alcance y la claridad que la región necesita.
+            La tecnología es el medio, el impacto en el Maule es el fin.
           </p>
         </RevealOnScroll>
 
@@ -42,18 +42,18 @@ export default function ClosingSection() {
           {[
             {
               step: "01",
-              title: "Conversemos",
-              description: "Agendar una reunión para revisar esta propuesta en detalle.",
+              title: "Revisamos juntos",
+              description: "Una reunión para recorrer esta propuesta, resolver dudas y escuchar sus prioridades.",
             },
             {
               step: "02",
-              title: "Definimos alcance",
-              description: "Ajustamos servicios y prioridades según tus necesidades.",
+              title: "Ajustamos el plan",
+              description: "Definimos qué servicios activar primero según las necesidades más inmediatas de la oficina.",
             },
             {
               step: "03",
-              title: "Comenzamos",
-              description: "Implementación inmediata con resultados desde el día uno.",
+              title: "Ponemos en marcha",
+              description: "Implementación progresiva con resultados concretos desde las primeras semanas.",
             },
           ].map((item) => (
             <motion.div
@@ -62,8 +62,8 @@ export default function ClosingSection() {
               className="rounded-2xl border border-border bg-bg-elevated p-6"
             >
               <p className="mb-2 text-2xl font-bold text-accent">{item.step}</p>
-              <h3 className="mb-1 font-semibold">{item.title}</h3>
-              <p className="text-sm text-muted">{item.description}</p>
+              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
+              <p className="text-base text-muted">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -72,21 +72,21 @@ export default function ClosingSection() {
         <RevealOnScroll variants={fadeUp}>
           <div className="rounded-2xl border border-border bg-bg-elevated p-8 md:p-12">
             <p className="mb-2 text-sm font-medium tracking-widest uppercase text-muted">
-              Contacto
+              Siguiente paso
             </p>
             <p className="text-2xl font-bold md:text-3xl">
-              ¿Listo para dar el siguiente paso?
+              Conversemos sobre su visión para el Maule
             </p>
-            <p className="mt-4 text-muted">
-              Agenda una reunión y conversemos sobre cómo podemos transformar
-              tu presencia digital.
+            <p className="mt-4 text-lg text-muted">
+              Cada senador tiene su estilo y sus prioridades. Quiero entender las suyas
+              para que estas herramientas trabajen exactamente como la oficina necesita.
             </p>
           </div>
         </RevealOnScroll>
 
         {/* Footer */}
-        <p className="mt-16 text-xs text-muted/50">
-          Propuesta confidencial preparada exclusivamente para Cristian Vial.
+        <p className="mt-16 text-sm text-muted/50">
+          Documento confidencial preparado para el senador Cristian Vial Ramírez.
         </p>
       </div>
     </section>

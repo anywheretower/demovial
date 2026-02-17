@@ -11,7 +11,7 @@ interface GlowCardProps {
 
 export default function GlowCard({
   children,
-  color = "#6366f1",
+  color = "#3b82f6",
   className = "",
 }: GlowCardProps) {
   return (

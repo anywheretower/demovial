@@ -62,8 +62,8 @@ export function BrainIcon({ className = "w-10 h-10", color = "currentColor" }: I
 
 export const serviceIcons = {
   nora: DashboardIcon,
-  soporte: GlobeIcon,
+  portal: GlobeIcon,
   escucha: EarIcon,
-  campanas: MegaphoneIcon,
+  difusion: MegaphoneIcon,
   "agente-ia": BrainIcon,
 } as const;

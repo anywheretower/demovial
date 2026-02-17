@@ -56,14 +56,14 @@ export default function ServiceSection({ service, index }: ServiceSectionProps) 
 
           <motion.h2
             variants={staggerItem}
-            className="mb-2 text-3xl font-bold md:text-4xl lg:text-5xl"
+            className="mb-3 text-3xl font-bold md:text-4xl lg:text-5xl"
           >
             {service.title}
           </motion.h2>
 
           <motion.p
             variants={staggerItem}
-            className="mb-4 text-lg text-muted"
+            className="mb-5 text-lg text-muted"
           >
             {service.subtitle}
           </motion.p>
@@ -85,12 +85,7 @@ export default function ServiceSection({ service, index }: ServiceSectionProps) 
               className="text-4xl font-bold"
               prefix="$"
             />
-            {service.price > 0 && (
-              <span className="text-sm text-muted">/ {service.priceLabel}</span>
-            )}
-            {service.price === 0 && (
-              <span className="text-sm text-muted">/ {service.priceLabel}</span>
-            )}
+            <span className="text-base text-muted">/ {service.priceLabel}</span>
           </motion.div>
         </div>
 
@@ -103,8 +98,8 @@ export default function ServiceSection({ service, index }: ServiceSectionProps) 
             {service.features.map((feature) => (
               <motion.div key={feature.title} variants={staggerItem}>
                 <GlowCard color={service.color} className="h-full">
-                  <h4 className="mb-2 text-sm font-semibold">{feature.title}</h4>
-                  <p className="text-xs leading-relaxed text-muted">
+                  <h4 className="mb-2 text-base font-semibold">{feature.title}</h4>
+                  <p className="text-[15px] leading-relaxed text-muted">
                     {feature.description}
                   </p>
                 </GlowCard>

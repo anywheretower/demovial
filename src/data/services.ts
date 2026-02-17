@@ -20,171 +20,171 @@ export const services: Service[] = [
   {
     id: 1,
     slug: "nora",
-    title: "Plataforma NORA",
-    subtitle: "Centro de comando digital",
+    title: "Gestión NORA",
+    subtitle: "Panel de gestión senatorial",
     description:
-      "Dashboard integral para gestionar toda la presencia digital del senador. Creatividades, publicaciones, tareas y métricas en un solo lugar.",
-    color: "#6366f1",
-    colorClass: "text-service-indigo",
+      "Una plataforma propia donde su equipo coordina contenidos, aprueba piezas de comunicación y mide el impacto de cada acción. Todo el flujo de trabajo de la oficina senatorial, ordenado en un solo lugar.",
+    color: "#3b82f6",
+    colorClass: "text-service-blue",
     features: [
       {
-        title: "Gestión de creatividades",
+        title: "Flujo de aprobación",
         description:
-          "Flujo completo de aprobación: briefing → diseño → revisión → publicación.",
+          "Cada pieza de comunicación pasa por un proceso claro: solicitud, diseño, revisión y publicación.",
       },
       {
-        title: "Calendario de publicaciones",
+        title: "Calendario editorial",
         description:
-          "Planificación y programación de contenido en todas las redes sociales.",
+          "Planificación semanal y mensual de contenidos alineada con la agenda legislativa.",
       },
       {
-        title: "Panel de métricas",
+        title: "Indicadores de gestión",
         description:
-          "KPIs en tiempo real: engagement, alcance, crecimiento de audiencia.",
+          "Métricas claras sobre alcance, recepción ciudadana y rendimiento de cada publicación.",
       },
       {
-        title: "Gestión de equipo",
+        title: "Coordinación de equipo",
         description:
-          "Roles, permisos y flujos de trabajo para el equipo de comunicaciones.",
+          "Roles y permisos para que cada miembro de la oficina trabaje de forma ordenada y autónoma.",
       },
     ],
-    price: 0,
+    price: 200000,
     priceLabel: "mensual",
   },
   {
     id: 2,
-    slug: "soporte",
-    title: "Soporte Plataforma Online",
-    subtitle: "Presencia web profesional",
+    slug: "portal",
+    title: "Portal Senatorial",
+    subtitle: "Vitrina pública de la gestión",
     description:
-      "Desarrollo y mantenimiento de la plataforma web oficial. Diseño responsivo, SEO optimizado y actualizaciones continuas.",
-    color: "#06b6d4",
-    colorClass: "text-service-cyan",
+      "Un sitio web institucional que refleje la seriedad de la labor senatorial. Proyectos de ley, intervenciones en sala, trabajo territorial y canales de contacto directo con la ciudadanía del Maule.",
+    color: "#14b8a6",
+    colorClass: "text-service-teal",
     features: [
       {
-        title: "Sitio web oficial",
+        title: "Perfil legislativo",
         description:
-          "Diseño moderno y profesional que refleja la identidad del senador.",
+          "Historial de votaciones, proyectos presentados y comisiones. Una trayectoria visible y actualizada.",
       },
       {
-        title: "Optimización SEO",
+        title: "Agenda territorial",
         description:
-          "Posicionamiento orgánico para búsquedas relevantes en la región del Maule.",
+          "Calendario público con actividades en terreno, audiencias y reuniones en la región.",
       },
       {
-        title: "Mantenimiento continuo",
+        title: "Canal ciudadano",
         description:
-          "Actualizaciones de contenido, seguridad y rendimiento garantizado.",
+          "Formularios de contacto y solicitudes para que los vecinos del Maule lleguen directamente a la oficina.",
       },
       {
-        title: "Analytics avanzado",
+        title: "Actualización permanente",
         description:
-          "Tracking de visitantes, fuentes de tráfico y comportamiento de usuarios.",
+          "Mantenimiento continuo del contenido, seguridad del sitio y optimización para buscadores.",
       },
     ],
-    price: 0,
+    price: 200000,
     priceLabel: "mensual",
   },
   {
     id: 3,
     slug: "escucha",
-    title: "Escucha Activa",
-    subtitle: "Inteligencia ciudadana en tiempo real",
+    title: "Escucha Territorial",
+    subtitle: "El pulso del Maule en tiempo real",
     description:
-      "Monitoreo continuo de conversaciones digitales, medios y redes sociales para entender el pulso de la opinión pública en el Maule.",
+      "Saber qué piensa, qué necesita y qué preocupa a los habitantes del Maule. Monitoreo permanente de conversaciones en medios y redes sociales para tomar decisiones informadas.",
     color: "#10b981",
     colorClass: "text-service-emerald",
     features: [
       {
-        title: "Monitoreo de redes sociales",
+        title: "Monitoreo de opinión pública",
         description:
-          "Tracking de menciones, hashtags y conversaciones relevantes 24/7.",
+          "Seguimiento continuo de lo que se dice sobre la gestión, la región y los temas legislativos clave.",
       },
       {
-        title: "Análisis de sentimiento",
+        title: "Análisis de percepción",
         description:
-          "IA que clasifica opiniones como positivas, negativas o neutras en tiempo real.",
+          "Inteligencia artificial que identifica el tono de las conversaciones: apoyo, crítica o indiferencia.",
       },
       {
-        title: "Alertas tempranas",
+        title: "Alertas de contingencia",
         description:
-          "Notificaciones inmediatas ante crisis o temas emergentes.",
+          "Notificaciones inmediatas cuando surge un tema urgente o una crisis que requiere pronunciamiento.",
       },
       {
-        title: "Reportes periódicos",
+        title: "Informes ejecutivos",
         description:
-          "Informes semanales con insights accionables y tendencias del territorio.",
+          "Reportes semanales con los temas más relevantes del territorio y recomendaciones de acción.",
       },
     ],
-    price: 0,
+    price: 200000,
     priceLabel: "mensual",
   },
   {
     id: 4,
-    slug: "campanas",
-    title: "Campañas Interactivas",
-    subtitle: "Engagement que genera impacto",
+    slug: "difusion",
+    title: "Difusión Legislativa",
+    subtitle: "La labor senatorial, visible para todos",
     description:
-      "Diseño y ejecución de campañas digitales interactivas que conectan al senador con la ciudadanía del Maule de forma innovadora.",
+      "Que el trabajo en el Senado no quede entre cuatro paredes. Producción de contenido que traduzca la actividad legislativa en mensajes claros, cercanos y relevantes para la gente del Maule.",
     color: "#f59e0b",
     colorClass: "text-service-amber",
     features: [
       {
-        title: "Estrategia de contenido",
+        title: "Contenido legislativo",
         description:
-          "Planificación editorial alineada con la agenda legislativa y territorial.",
+          "Piezas que explican proyectos de ley, votaciones y debates de forma accesible para la ciudadanía.",
       },
       {
-        title: "Producción multimedia",
+        title: "Cobertura territorial",
         description:
-          "Videos, infografías y piezas interactivas de alto impacto.",
+          "Registro y difusión de actividades en terreno: visitas, reuniones, inauguraciones y gestiones.",
       },
       {
-        title: "Campañas segmentadas",
+        title: "Producción audiovisual",
         description:
-          "Publicidad digital dirigida por comuna, edad e intereses.",
+          "Videos, gráficas e infografías con estándar profesional para redes sociales y medios.",
       },
       {
-        title: "Medición de resultados",
+        title: "Distribución estratégica",
         description:
-          "ROI claro: alcance, interacciones, conversiones y sentimiento.",
+          "Publicación segmentada por comuna y temática para llegar a quien más le importa cada mensaje.",
       },
     ],
-    price: 0,
+    price: 200000,
     priceLabel: "mensual",
   },
   {
     id: 5,
     slug: "agente-ia",
-    title: "Agente IA Personalizado",
-    subtitle: "Inteligencia artificial a tu servicio",
+    title: "Asistente Institucional IA",
+    subtitle: "Inteligencia al servicio de la oficina senatorial",
     description:
-      "Un asistente virtual con IA entrenado específicamente con la información del senador, su agenda y el contexto del Maule.",
-    color: "#a855f7",
-    colorClass: "text-service-purple",
+      "Un asistente con inteligencia artificial entrenado con la información pública del senador, su agenda y el contexto del Maule. Responde consultas, genera borradores y apoya la operación diaria del equipo.",
+    color: "#64748b",
+    colorClass: "text-service-slate",
     features: [
       {
-        title: "Base de conocimiento propia",
+        title: "Conocimiento especializado",
         description:
-          "Entrenado con discursos, votaciones, proyectos de ley y datos del Maule.",
+          "Entrenado con el historial legislativo, discursos, datos regionales y documentos de la oficina.",
       },
       {
-        title: "Atención ciudadana 24/7",
+        title: "Atención ciudadana permanente",
         description:
-          "Responde consultas frecuentes de los ciudadanos de forma automática.",
+          "Responde consultas frecuentes de los vecinos del Maule las 24 horas, los 7 días de la semana.",
       },
       {
-        title: "Generación de contenido",
+        title: "Apoyo a la redacción",
         description:
-          "Borradores de comunicados, respuestas y documentos con el tono del senador.",
+          "Borradores de comunicados, minutas y respuestas formales con el tono institucional adecuado.",
       },
       {
-        title: "Integración multicanal",
+        title: "Disponible en múltiples canales",
         description:
-          "Disponible en web, WhatsApp y redes sociales del senador.",
+          "Integración en el sitio web, WhatsApp y las redes sociales de la oficina senatorial.",
       },
     ],
-    price: 0,
+    price: 200000,
     priceLabel: "mensual",
   },
 ];
