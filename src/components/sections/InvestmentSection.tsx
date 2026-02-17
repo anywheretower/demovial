@@ -26,11 +26,15 @@ export default function InvestmentSection() {
           <p className="mb-4 text-center text-sm font-medium tracking-widest uppercase text-accent-amber">
             Inversión mensual
           </p>
-          <h2 className="mb-16 text-center text-3xl font-bold md:text-5xl">
+          <h2 className="mb-4 text-center text-3xl font-bold md:text-5xl">
             <GradientText from="#f59e0b" to="#f97316">
-              Resumen de la propuesta
+              El paquete completo
             </GradientText>
           </h2>
+          <p className="mx-auto mb-16 max-w-xl text-center text-base leading-relaxed text-muted">
+            Una inversión única que cubre los cinco pilares del sistema.
+            Sin piezas sueltas, sin costos ocultos.
+          </p>
         </RevealOnScroll>
 
         {/* Table */}

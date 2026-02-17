@@ -6,23 +6,23 @@ import RevealOnScroll from "../ui/RevealOnScroll";
 import GlowCard from "../ui/GlowCard";
 import GradientText from "../ui/GradientText";
 
-const pillars = [
+const challenges = [
   {
-    title: "Gestión eficiente",
+    title: "La gestión invisible",
     description:
-      "Ordenar el flujo de trabajo de la oficina senatorial con herramientas que permitan al equipo operar con claridad, agilidad y trazabilidad.",
+      "El trabajo legislativo es intenso pero rara vez llega a la ciudadanía. Votaciones, comisiones, gestiones territoriales: todo ocurre, pero pocos lo ven.",
     color: "#3b82f6",
   },
   {
-    title: "Conexión territorial",
+    title: "El territorio desconectado",
     description:
-      "Escuchar al Maule y que el Maule lo escuche. Canales directos para entender las necesidades reales de la región y comunicar la respuesta.",
+      "Las necesidades del Maule no siempre llegan a tiempo al Senado. Y las respuestas del Senado no siempre llegan al Maule.",
     color: "#14b8a6",
   },
   {
-    title: "Visibilidad legislativa",
+    title: "El equipo sin herramientas",
     description:
-      "Que el trabajo en el Senado sea conocido. Traducir la actividad legislativa en mensajes claros que lleguen a quienes representa.",
+      "Una oficina senatorial opera con múltiples frentes abiertos. Sin un sistema que ordene, se pierde tiempo, se duplican esfuerzos y se diluye el impacto.",
     color: "#10b981",
   },
 ];
@@ -36,15 +36,15 @@ export default function IntroSection() {
             El desafío
           </p>
           <h2 className="mb-6 text-3xl font-bold leading-tight md:text-5xl">
-            Un senado moderno requiere{" "}
+            Tres problemas reales{" "}
             <GradientText from="#3b82f6" to="#14b8a6">
-              herramientas a la altura.
+              que esta propuesta resuelve.
             </GradientText>
           </h2>
           <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted">
-            La labor legislativa es compleja y muchas veces invisible para la ciudadanía.
-            Esta propuesta reúne las herramientas necesarias para que la gestión sea
-            ordenada, su voz llegue al territorio y el trabajo hable por sí mismo.
+            Antes de hablar de herramientas, es importante entender los desafíos
+            concretos que enfrenta una gestión senatorial moderna. Los tres convergen
+            en un mismo punto: la necesidad de un sistema digital integrado.
           </p>
         </RevealOnScroll>
 
@@ -55,16 +55,16 @@ export default function IntroSection() {
           variants={staggerContainer}
           className="grid gap-6 md:grid-cols-3"
         >
-          {pillars.map((pillar) => (
-            <motion.div key={pillar.title} variants={staggerItem}>
-              <GlowCard color={pillar.color} className="h-full">
+          {challenges.map((challenge) => (
+            <motion.div key={challenge.title} variants={staggerItem}>
+              <GlowCard color={challenge.color} className="h-full">
                 <div
                   className="mb-4 h-1 w-12 rounded-full"
-                  style={{ backgroundColor: pillar.color }}
+                  style={{ backgroundColor: challenge.color }}
                 />
-                <h3 className="mb-3 text-xl font-semibold">{pillar.title}</h3>
+                <h3 className="mb-3 text-xl font-semibold">{challenge.title}</h3>
                 <p className="text-base leading-relaxed text-muted">
-                  {pillar.description}
+                  {challenge.description}
                 </p>
               </GlowCard>
             </motion.div>
