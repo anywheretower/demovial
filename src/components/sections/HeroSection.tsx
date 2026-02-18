@@ -48,7 +48,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-6 text-base font-medium tracking-widest uppercase text-muted"
         >
-          Infraestructura digital para el Senado
+          Infraestructura digital para Labor Senatorial
         </motion.p>
 
         <motion.h1
@@ -68,7 +68,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mx-auto mb-4 max-w-2xl text-xl text-muted md:text-2xl"
         >
-          Herramientas para potenciar su gestión, fortalecer la conexión con el Maule y hacer visible una labor legislativa responsable y trascendente.
+          Propuesta para potenciar su gestión, equipo parlamentario, fortalecer la conexión con el Maule y hacer visible una labor legislativa responsable y trascendente.
         </motion.p>
 
         <motion.div
@@ -97,10 +97,10 @@ export default function HeroSection() {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center gap-2 text-muted"
         >
-          <span className="text-xs tracking-widest uppercase">Scroll</span>
+          <span className="text-sm tracking-widest uppercase">Scroll</span>
           <svg
-            width="20"
-            height="20"
+            width="32"
+            height="32"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

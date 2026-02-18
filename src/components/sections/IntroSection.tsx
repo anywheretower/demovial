@@ -42,7 +42,7 @@ export default function IntroSection() {
             </GradientText>
           </h2>
           <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted">
-            Antes de hablar de herramientas, es importante entender los desafíos
+            Antes de hablar de propuestas, es importante entender los desafíos
             concretos que enfrenta una gestión senatorial moderna. Los tres convergen
             en un mismo punto: la necesidad de un sistema digital integrado.
           </p>

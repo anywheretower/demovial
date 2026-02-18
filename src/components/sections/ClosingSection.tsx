@@ -47,8 +47,8 @@ export default function ClosingSection() {
             },
             {
               step: "02",
-              title: "Ajustamos el plan",
-              description: "Definimos qué servicios activar primero según las necesidades más inmediatas de la oficina.",
+              title: "Diseñamos el plan",
+              description: "Definimos cómo activar servicios segun capital humano de la oficina parlamentaria.",
             },
             {
               step: "03",

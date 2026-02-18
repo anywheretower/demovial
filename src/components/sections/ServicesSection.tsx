@@ -49,14 +49,9 @@ function ServiceAccordion({
           <p className="text-sm text-muted">{service.subtitle}</p>
         </div>
 
-        <div className="hidden shrink-0 text-right sm:block">
-          <AnimatedCounter
-            value={service.price}
-            className="text-lg font-semibold"
-            prefix="$"
-          />
-          <p className="text-xs text-muted">/ {service.priceLabel}</p>
-        </div>
+        <span className="hidden shrink-0 text-sm font-medium sm:block" style={{ color: service.color }}>
+          {isOpen ? "Cerrar" : "Ver detalles"}
+        </span>
 
         <motion.svg
           animate={{ rotate: isOpen ? 180 : 0 }}
@@ -83,18 +78,6 @@ function ServiceAccordion({
             className="overflow-hidden"
           >
             <div className="border-t border-border px-6 pb-6 pt-5 md:px-8 md:pb-8 md:pt-6">
-              {/* Mobile price */}
-              <div className="mb-5 sm:hidden">
-                <AnimatedCounter
-                  value={service.price}
-                  className="text-2xl font-bold"
-                  prefix="$"
-                />
-                <span className="ml-1 text-sm text-muted">
-                  / {service.priceLabel}
-                </span>
-              </div>
-
               <p className="mb-6 max-w-2xl text-base leading-relaxed text-muted">
                 {service.description}
               </p>
@@ -114,6 +97,39 @@ function ServiceAccordion({
                   </div>
                 ))}
               </div>
+
+              {/* Demo access for Gestión NORA */}
+              {service.slug === "nora" && (
+                <div className="mt-6 rounded-xl border border-blue-500/20 bg-blue-500/5 p-5">
+                  <p className="mb-3 text-sm font-semibold text-blue-400">
+                    Acceso a plataforma de muestra
+                  </p>
+                  <div className="mb-4 space-y-1 text-sm text-muted">
+                    <p>
+                      <span className="text-muted/70">Usuario:</span>{" "}
+                      <code className="rounded bg-white/5 px-1.5 py-0.5 text-xs">demo@nora.app</code>
+                    </p>
+                    <p>
+                      <span className="text-muted/70">Clave:</span>{" "}
+                      <code className="rounded bg-white/5 px-1.5 py-0.5 text-xs">demonoralabs</code>
+                    </p>
+                  </div>
+                  <p className="mb-4 text-xs text-muted/60">
+                    * Plataforma optimizada para versión de escritorio.
+                  </p>
+                  <a
+                    href="https://clientes.jorgetorres.cl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-blue-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
+                  >
+                    Ingresar a la plataforma
+                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                  </a>
+                </div>
+              )}
             </div>
           </motion.div>
         )}

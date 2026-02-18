@@ -37,7 +37,7 @@ export default function InvestmentSection() {
           </p>
         </RevealOnScroll>
 
-        {/* Table */}
+        {/* Pilares incluidos */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -49,7 +49,7 @@ export default function InvestmentSection() {
             <motion.div
               key={service.slug}
               variants={staggerItem}
-              className={`flex items-center justify-between px-6 py-5 ${
+              className={`flex items-center px-6 py-5 ${
                 i < services.length - 1 ? "border-b border-border" : ""
               }`}
             >
@@ -63,18 +63,14 @@ export default function InvestmentSection() {
                   <p className="text-sm text-muted">{service.subtitle}</p>
                 </div>
               </div>
-              <AnimatedCounter
-                value={service.price}
-                className="text-lg font-semibold"
-              />
             </motion.div>
           ))}
         </motion.div>
 
         {/* Total */}
         <RevealOnScroll variants={fadeUp}>
-          <div className="flex items-center justify-between rounded-2xl border border-accent-amber/30 bg-accent-amber/5 px-6 py-6">
-            <p className="text-lg font-semibold">Total mensual</p>
+          <div className="flex flex-col items-center gap-2 rounded-2xl border border-accent-amber/30 bg-accent-amber/5 px-6 py-8">
+            <p className="text-lg font-semibold">Inversión mensual total</p>
             <AnimatedCounter
               value={total}
               className="text-3xl font-bold text-accent-amber md:text-4xl"
